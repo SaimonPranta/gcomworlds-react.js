@@ -1,0 +1,289 @@
+:root {
+    --hover-bg: #dfdddd;
+}
+
+.dashboard-navication {
+    background-color: #FFFFFF;
+    min-width: 250px;
+    height: calc(100vh + 5px);
+    position: fixed;
+    border-right: 2px solid rgba(255, 255, 255, 0.073);
+    margin-top: -68px;
+    padding-bottom: 16px;
+    transition: left .5s;
+    overflow-Y: scroll;
+
+}
+
+.dashboardNavigation::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dashboardNavigation {
+    overflow: auto;
+    scrollbar-width: none;
+    scrollbar-color: rgba(255, 255, 255, 0) #1e273f00;
+}
+
+.dashboard-logo {
+    display: block;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    height: 67px;
+    padding-left: 0px !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: inherit !important;
+    color: #000;
+    padding-top: 25px;
+    padding-left: 17px !important;
+    border-bottom: 1px solid rgba(248, 250, 252, .08);
+}
+
+.dashboard-logo:hover {
+    color: #000;
+}
+
+.dashboard-navication ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.dashboard-navication ul li {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    padding: 5px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-navication ul .log-out a {
+    background-color: #aaa6a6;
+}
+
+.dashboard-navication-title h6 {
+    color: #000;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 17px 20px 17px;
+    font-weight: 700;
+    border-bottom: 1px solid #dba72262;
+}
+
+.dashboard-navication-title h6 svg {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.dashboard-navication ul li svg, .my-account-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    transition: .2s;
+    display: inline-block;
+}
+
+.dashboard-navication ul li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 5px 17px;
+    color: #000;
+    width: 100%;
+    transition: .2s;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    outline: 1px solid #e1dfdfab;
+    display: flex;
+    justify-content: start;
+    align-items: center !important;
+    height: 100%;
+
+}
+
+.dashboard-navication ul .collaps-arrow {
+    height: 20px !important;
+    width: 20px !important;
+    margin-left: auto;
+    opacity: .7;
+}
+
+.dashboard-navication ul li button {
+    margin: 0;
+    padding: 0px;
+    color: #000;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #e1dfdfab !important;
+    border-radius: 0px;
+    height: 100% !important;
+
+}
+
+.dashboard-navication ul li button:active {
+    scale: 1;
+}
+
+.dashboard-navication ul li button ul li {
+    list-style: decimal !important;
+}
+
+.dashboard-navication ul li button div {
+    text-decoration: none;
+    margin: 0;
+    padding: 5px 17px;
+    color: #000;
+    width: 100%;
+    transition: .2s;
+    outline: 1px solid #e1dfdfab;
+    border: 5px solid transparent;
+    background-color: #FFFFFF !important;
+    display: flex;
+    justify-content: start;
+    align-items: center !important;
+
+}
+
+.dashboard-navication ul li button:hover .collaps-arrow, .dashboard-navication ul li button:focus .collaps-arrow, .dashboard-navication ul li .active-btn .collaps-arrow {
+    transform: rotate(90deg);
+    transition: .4s;
+}
+
+.dashboard-navication ul li button ul {
+    display: none;
+    margin-bottom: 0px;
+    z-index: -1;
+}
+
+
+.dashboard-navication ul li button ul li a {
+    position: relative;
+    border: 5px solid transparent;
+}
+
+.dashboard-navication ul li button ul li a::before {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    background-color: #ffffff;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+}
+
+.dashboard-navication ul li button ul li .active::before {
+    background-color: #ffffff !important; 
+}
+
+.dashboard-navication ul li button ul li a:hover {
+    background-color: var(--hover-bg);
+    color: #DBA622 !important; 
+    
+}
+
+
+
+.dashboard-navication ul li button ul li a:hover::before {
+    background-color: #DBA622;
+}
+
+.dashboard-navication ul li button ul li .active {
+    background-color: var(--hover-bg);
+    color: #DBA622;
+    border-left: none;
+    background-color: var(--default-blue) !important;
+}
+
+.dashboard-navication ul li button ul li .active::before {
+    background-color: #DBA622;
+}
+
+.dashboard-navication ul li button:hover {
+    background-color: #dfdddd;
+    color: #DBA622;
+    border-left: none;
+    height: 100%;
+}
+
+.dashboard-navication ul li button:focus, .dashboard-navication ul li .active-btn {
+    background-color: var(--hover-bg);
+}
+
+.dashboard-navication ul li button:hover div, .dashboard-navication ul li button:focus div, .dashboard-navication ul li .active-btn div {
+    background-color: var(--hover-bg) !important;
+    color: #DBA622;
+    border-left: 5px solid #DBA622;
+}
+
+.dashboard-navication ul li .active-btn div {
+    background-color: var(--hover-bg) !important;
+    color: #DBA622;
+
+}
+
+
+.dashboard-navication ul li button:hover ul, .dashboard-navication ul li button:focus ul {
+    display: block !important;
+    transform: translateY(0%);
+    background-color: #eceaea !important;
+    height: 100% !important;
+
+}
+
+.dashboard-navication ul li .active-btn ul {
+    display: block !important;
+    transform: translateY(0%);
+    background-color: var(--hover-bg) !important;
+    height: 100% !important;
+
+}
+
+.dashboard-navication ul li a:hover {
+    background-color: var(--hover-bg);
+    color: #DBA622 !important;
+    border-left: 5px solid #DBA622;
+}
+
+.dashboard-navication ul li button:hover div, .dashboard-navication ul li button:focus div {
+    background-color: yellow;
+    color: #DBA622;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.dashboard .active {
+    background-color: var(--hover-bg);
+    color: #fff !important;
+    border-left: 5px solid #DBA622 !important;
+    border-top: 5px solid var(--default-blue) !important;
+    border-right: 5px solid var(--default-blue) !important;
+    border-bottom: 5px solid var(--default-blue) !important;
+    background-color: var(--default-blue) !important;
+}
+
+@media only screen and (min-width:200px) and (max-width: 768px) {
+    .dashboard-navication {
+        background-color: #FFFFFF;
+        left: -270px;
+        z-index: 9999;
+    }
+
+    .active_dashboard_navication {
+        left: 0px !important;
+    }
+
+}

@@ -1,0 +1,23 @@
+.edit-heor-img-model .inner-container {
+    height: 420px;
+}
+
+.common-model-style img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.active-edit-heor-img-model {
+    visibility: visible;
+}
+
+.active-edit-heor-img-model .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}
+
+.active-edit-heor-img-model .inner-container {
+    height: 440px;
+}

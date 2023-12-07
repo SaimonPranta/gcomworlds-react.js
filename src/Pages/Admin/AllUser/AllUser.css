@@ -1,0 +1,111 @@
+.sub-generation select {
+    background-color: #dba622;
+    border: 1px solid #dba622;
+}
+
+.genaration {
+    display: block;
+    width: 700px;
+}
+
+.genaration div {
+    padding: 13px 0 3px 0;
+    border-bottom: 1px solid #d3d2d248;
+}
+
+.genaration div:first-child {
+    padding: 13px 0 0px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.genaration div h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.genaration p {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.common-searc-container label {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.distribute-section div {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.distribute-section div button {
+    padding: 4px 9px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #dba622;
+    color: #fff;
+}
+
+.distribute-section div input {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 3px 5px;
+
+}
+
+.generation-list-container .gen-list-item {
+    padding: 13px 0 3px 0;
+    border-bottom: 1px solid #fff;
+
+}
+
+.gen-list-item div {
+    width: 300px;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1150px) {
+    .gen-list-item div {
+        width: 210px;
+    }
+
+    .genaration {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 992px) {
+    .gen-list-item div {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 900px) {
+    .gen-list-item div {
+        width: 190px;
+    }
+
+    .genaration {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 470px) {
+    .gen-list-item div {
+        width: 150px;
+    }
+
+    .genaration {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 390px) {
+    .genaration {
+        width: 270px;
+    }
+}

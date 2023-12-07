@@ -1,0 +1,35 @@
+.page-list {
+  position: absolute;
+  height: auto;
+  width: 150px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+  div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #dfdbdb;
+    padding: 15px 5px;
+    a {
+      display: inline-block;
+      font-size: 14px;
+      color: #696969;
+      background-color: transparent;
+      text-decoration: none;
+      padding: 5px 10px;
+      width: 100%;
+      text-align: start;
+      &:hover {
+        background-color: #a1ddf5;
+      }
+    }
+  }
+}

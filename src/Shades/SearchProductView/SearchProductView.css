@@ -1,0 +1,86 @@
+
+.search-view-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #FFF;
+    z-index: 99999999999999 !important;
+    padding: 10px 50px;
+    width: 100%;
+    margin: auto !important;
+    color: #fff;
+
+
+}
+
+.search-view-products .innter-container {}
+
+.search-view-products .innter-container a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ba921c95;
+    width: 700px;
+    cursor: pointer;
+    margin: auto !important;
+}
+
+.search-view-products .innter-container:last-child a {
+    border: none;
+}
+
+.search-view-products .innter-container img {
+    max-width: 200px !important;
+    width: 200px !important;
+    height: 75px !important;
+    background-color: green;
+}
+
+.search-view-products .innter-container .pd-info {
+    display: grid;
+    grid-gap: 0px;
+}
+
+.search-view-products .innter-container .pd-info h6 {
+    margin: 0px;
+}
+
+.search-view-products .innter-container .pd-info p {
+    margin: 0px;
+    padding: 0px;
+    color: #b18b17 !important;
+}
+
+.search-view-products .innter-container .pd-info .price {
+    font-weight: 500;
+    color: #ba921c;
+    font-size: 1.3rem !important;
+}
+
+.search-view-products .innter-container .pd-info div svg {
+    color: #d5a820;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:850px) {
+    .search-view-products .innter-container a {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:650px) {
+    .search-view-products .innter-container a {
+        width: 100%;
+    }
+
+    .search-view-products .innter-container img {
+        max-width: 120px !important;
+        width: 120px !important;
+        height: 65px !important;
+    }
+}

@@ -1,0 +1,23 @@
+.add-laicence-info-model .inner-container {
+    height: 420px;
+}
+
+.common-model-style img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.active-add-laicence-info-model {
+    visibility: visible;
+}
+
+.active-add-laicence-info-model .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}
+
+.active-add-laicence-info-model .inner-container {
+    height: 470px;
+}

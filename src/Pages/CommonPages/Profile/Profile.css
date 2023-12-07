@@ -1,0 +1,594 @@
+.porfile-sub-container {
+    display: grid;
+    grid-template-columns: .7fr 1fr 1fr;
+    width: 100%;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+}
+
+.porfile-common-section {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-color: #FFFFFF;
+
+}
+
+.porfile-sub-container .img-conatiner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 330px;
+}
+
+.porfile-sub-container .img-conatiner img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.porfile-sub-container .img-conatiner .camera_icon {
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    z-index: 99;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50% 50% 0% 50%;
+    cursor: pointer;
+}
+
+.porfile-sub-container .img-conatiner::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: -65px;
+    right: -20px;
+    width: auto;
+    height: 100px;
+    transform: none;
+    -webkit-transform: none;
+    border-radius: 100% 100% 0 0;
+    /* background-color: #191919; */
+    backdrop-filter: blur(20px);
+}
+
+.porfile-common-section input {
+    background-color: rgba(0, 0, 0, 0);
+    color: #dbcdcd;
+    outline: none;
+    border: none;
+}
+
+.porfile-common-section .copy-svg {
+    cursor: pointer;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #05A69B;
+}
+
+.porfile-sub-container .img-conatiner .user-name {
+    text-align: center !important;
+    height: 100%;
+
+}
+
+.profile .user-name h2 {
+    padding-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.porfile-sub-container p {
+    text-align: center !important;
+    color: #7C01F7;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.porfile-sub-container .message {
+    display: flex;
+    margin: auto;
+    height: 30px;
+    width: 150px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 5px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.porfile-sub-container .message svg {
+    height: 22px;
+    width: 22px;
+}
+
+.user-name div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-top: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.user-name div a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.user-name div a svg {
+    height: 23px;
+    width: 23px;
+    text-align: center;
+}
+
+.user-name div a:hover {
+    color: #edff20;
+}
+
+.user-name .active-user {
+    color: green;
+}
+
+.user-name .deactive-user {
+    color: #c2921a;
+}
+
+
+.porfile-sub-container h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.about p {
+    text-align: start !important;
+    color: #706b6b;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.balance .sub-balance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding-top: 30px;
+}
+
+.balance .sub-balance div {
+    height: 80px;
+    border: 1px solid #7C01F7;
+    position: relative;
+}
+
+.balance span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    height: 100%;
+    color: #a0a0a0;
+}
+
+.balance p {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 5px;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+.edit_icon {
+    position: relative;
+    background-color: blue;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    padding: 2px 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.edit_icon img {
+    height: 30px;
+    width: 30px;
+}
+
+.edit_icon p {
+    padding: 0;
+    font-weight: 700;
+}
+
+.image_upload_modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, -30%) scale(0);
+    height: 100vh;
+    width: 100vw;
+    transition: .5s;
+}
+
+.image_upload_modal form {
+    position: relative;
+    background-color: #fff;
+    min-height: 150px;
+    min-width: 280px;
+    max-width: 500px;
+    max-height: 100px;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.active_image_upload_modal {
+    transform: translate(0%, 0%) scale(1);
+}
+
+.image_upload_modal form svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.image_upload_modal input[type="file"] {
+    border: 1px solid rgb(136, 103, 103);
+    margin-top: 10px;
+    gap: 15px;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    padding: 0px;
+}
+
+.user_update_modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, -45%) scale(0);
+    height: 100vh;
+    width: 100vw;
+    transition: .5s;
+    z-index: 9999999999999999;
+}
+
+.reset_password_modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, -45%) scale(0);
+    height: 100vh;
+    width: 100vw;
+    transition: .5s;
+    z-index: 9999999999999999;
+}
+
+.active_reset_password_modal {
+    transform: translate(0%, 0%) scale(1);
+}
+
+.porfile_menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #FFFFFF;
+    color: #000;
+    width: 150px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    display: none;
+    z-index: 3;
+}
+
+.porfile_menu p {
+    font-size: .9rem;
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+}
+
+.reset_password_modal form {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.active_porfile_menu {
+    display: flex;
+}
+
+.porfile_menu p:hover {
+    background-color: #1919195e;
+}
+
+.user_update_modal h6, .reset_password_modal h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px !important;
+}
+
+.sub_user_update_modal {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.sub_reset_password_modal {
+    position: relative;
+    width: 500px;
+    height: 310px;
+    background-color: #fff;
+}
+
+.user_update_modal form {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.user_update_modal svg, .reset_password_modal svg {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.user_update_modal form label, .reset_password_modal form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.user_update_modal form input, .reset_password_modal form input {
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(2, 2, 2, 0.301);
+    border-right: 2px solid rgba(2, 2, 2, 0.301);
+    width: 100%;
+}
+
+.user_update_modal form textarea {
+    display: block;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid rgba(2, 2, 2, 0.301);
+    border-right: 2px solid rgba(2, 2, 2, 0.301);
+    max-height: 45px;
+    width: 100%;
+}
+
+.user_update_modal form input:focus, .reset_password_modal form input:focus {
+    outline: none;
+}
+
+.user_update_modal form textarea:focus {
+    outline: none;
+}
+
+.user_update_modal form input::placeholder, .user_update_modal form textarea::placeholder {
+    font-size: .9rem;
+}
+
+.active_user_update_modal {
+    transform: translate(0%, 0%) scale(1);
+}
+
+.common_btn input[type="submit"] {
+    max-width: 120px !important;
+    margin-left: 0px;
+    padding: 5px;
+    background-color: #dba622;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #dba622;
+    outline: none;
+}
+
+.common_btn input[type="submit"]:hover {
+    background-color: #c2921a;
+    color: #fff;
+    border: 2px solid #c2921a
+}
+
+@media only screen and (min-width:200px) and (max-width: 1500px) {
+    .porfile-sub-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .porfile_menu {
+        top: 0px;
+        left: 69px;
+        width: 120px;
+    }
+
+    .edit_icon {
+        height: 25px;
+        width: 65px;
+    }
+
+
+
+    .edit_icon img {
+        height: 23px;
+        width: 23px;
+    }
+
+    .sub_user_update_modal {
+        position: relative;
+        width: 450px;
+        height: 360px;
+        background-color: #fff;
+    }
+
+    .sub_reset_password_modal {
+        position: relative;
+        width: 450px;
+        height: 300px;
+        background-color: #fff;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 1250px) {
+    .profile h3::after {
+        width: 80px;
+    }
+
+    .porfile_menu {
+        left: 60px;
+        width: 110px;
+    }
+
+    .edit_icon {
+        height: 22px;
+        width: 55px;
+    }
+
+    .edit_icon img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .porfile-sub-container {
+        grid-template-columns: .9fr 1fr;
+    }
+
+    .porfile-common-section:nth-child(3) {
+        grid-column: 1/3;
+    }
+
+    .porfile-common-section {
+        height: 100%;
+    }
+
+    .porfile-common-section p {
+        color: #656565;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image_upload_modal form {
+        max-width: 40%;
+    }
+
+    .sub_reset_password_modal {
+        width: 50%;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 850px) {
+    .profile h3::after {
+        width: 70px;
+    }
+
+    .porfile_menu {
+        left: 60px;
+        width: 120px;
+    }
+
+    .porfile-sub-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .porfile-common-section:nth-child(2) {
+        grid-column: 1/3;
+    }
+
+    .porfile-sub-container .img-conatiner {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sub_user_update_modal {
+        width: 50%;
+        height: 330px;
+    }
+
+    .sub_reset_password_modal {
+        width: 50%;
+        height: 250px;
+
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 769px) {
+    .porfile_menu {
+        left: 60px;
+        width: 105px;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 580px) {
+    .sub_user_update_modal {
+        width: 60%;
+        height: 300px;
+    }
+
+    .sub_reset_password_modal {
+        width: 60%;
+        height: 240px;
+    }
+
+    .porfile_menu {
+        width: 110px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .porfile_menu p {
+        padding: 5px 5px 5px 10px;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 500px) {
+    .porfile-sub-container .img-conatiner {
+        width: 85%;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 400px) {
+    .porfile-sub-container .img-conatiner {
+        width: 95%;
+    }
+}

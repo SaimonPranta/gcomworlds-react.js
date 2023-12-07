@@ -1,0 +1,303 @@
+.header-container {
+    position: relative;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding-top: 10px;
+    /* background-color: #0C1322; */
+    background-color: #FFFFFF;
+    z-index: 99999;
+    border-bottom: 1px solid rgba(248, 250, 252, .08); 
+    box-shadow: 0px 0px 5px 1px #d2cfcf;
+}
+
+.nav-container {
+    display: grid !important;
+    grid-template-columns: auto auto auto !important;
+    justify-content: space-between !important;
+    align-items: center;
+
+}
+
+.logo .active {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.logo a {
+    display: inline-block !important;
+    padding-left: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100%;
+}
+
+.logo a img {
+    height: 70px;
+    width: 170px;
+}
+
+.header a {
+    color: #000 !important;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 5px 1px;
+    border: 2px solid#0c132200;
+    text-transform: uppercase;
+    font-weight: 570;
+}
+
+.header .notificaton-icon {
+    position: relative;
+}
+
+.bag-icon a {
+    position: relative;
+    background-color: #2874F0;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag-icon a div {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: -10px;
+    right: -10px;
+    background-color: #F57224;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag-icon svg {
+    height: 20px;
+    width: 20px;
+    font-weight: 900;
+}
+
+.header ul li a:hover {
+    transition: .5s;
+    background-color: rgba(67, 57, 77, 0.855);
+    border: 2px solid rgba(67, 57, 77, 0);
+
+}
+
+.active {
+    background-color: rgba(67, 57, 77, 0.855);
+}
+
+
+.header .user {
+    margin: 0px !important;
+}
+
+.header .user a {
+    border-radius: 0px;
+    margin: 0px !important;
+    padding: 0px;
+    border: 0px;
+    margin-left: 5px !important;
+}
+
+.header .user a:hover {
+    background-color: #0C1322;
+    border: 0px;
+}
+
+.header .user .active {
+    color: #dba72200;
+    border: 0px;
+}
+
+.header .user a img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: blueviolet;
+    box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.74);
+    margin-top: -5px;
+    padding: 2px 4px;
+    outline: 1px solid rgba(255, 255, 0, 0) !important;
+    border: none !important;
+}
+
+.navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:active {
+    outline: 1px solid rgba(255, 255, 0, 0) !important;
+    border: none !important;
+    background-color: rgba(137, 43, 226, 0.678);
+    box-shadow: -1px 2px 1px rgba(255, 255, 255, 0.438);
+
+}
+
+#navbar-light .navbar-toggler-icon {
+    background: url('../../Assets/Images/Icons/icons8-menu-20.png');
+    background-position: 100%;
+}
+
+.mobile-nav-list ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #E6A220;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+    margin: auto 10px;
+
+}
+
+.search-container input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 3px 10px;
+    width: 300px !important;
+}
+
+.search-container input::placeholder {
+    color: #b69393;
+    font-weight: 100 !important;
+}
+
+.search-container button {
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #E6A220;
+    padding: 3px 25px;
+}
+
+.search-container button svg {
+    height: 25px;
+    width: 25px;
+    color: #000;
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 1100px) {
+    .header-ul li a {
+        display: block;
+        padding: 5px 3px !important;
+        margin: 1px;
+    }
+
+    .bag-icon a {
+        display: flex !important;
+        padding: 0 !important;
+        margin-left: 3px;
+        margin-top: 9px !important;
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo a img {
+        height: 50px;
+        width: 120px;
+    }
+
+    .bag-icon a div {
+        position: absolute;
+        height: 22px;
+        width: 22px;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 992px) {
+    .header-ul {
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 860px) {
+    .header-ul li a {
+        padding: 4px 5px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 768px) {
+    .header-ul {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .header-ul li {
+        display: block;
+    }
+
+    .header-ul li a {
+        display: block;
+        padding: 5px 20px;
+        margin: 1px;
+    }
+
+    .header .user a img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .nav-container {
+        grid-template-columns: auto auto auto auto !important;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 650px) {
+    .logo a {
+        padding: 6px 10px 6px 0px !important;
+    }
+
+    .logo a img {
+        height: 40px;
+        width: 100px;
+    }
+
+    .search-container input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 3px 10px;
+        width: 100% !important;
+    }
+
+    .search-container button {
+        padding: 3px 15px;
+    }
+
+    .search-container button svg {
+        height: 20px;
+        width: 20px;
+
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 500px) {
+    .header .user a img {
+        height: 30px;
+        width: 30px;
+        margin-top: 1px;
+    }
+
+}

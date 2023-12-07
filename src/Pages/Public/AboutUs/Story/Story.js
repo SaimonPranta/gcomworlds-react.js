@@ -1,0 +1,44 @@
+import React from 'react';
+import './Story.css';
+
+const Story = () => {
+    return (
+      <section className="story">
+        <div className="container-lg">
+          <div className="sub-story row p-5 my-5">
+            <div className="col-sm-6 col-12">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="_image"
+              />
+            </div>
+            <div className="col-sm-6 col-12 mt-sm-0 mt-5 d-flex flex-column justify-content-between">
+              <div className="story-text">
+                <h4>OUR STORY</h4>
+                <h6>
+                  One of the best investing marketing tools is High yield
+                  investment program.
+                </h6>
+              </div>
+              <div>
+                <p>
+                  The journey of GcomWorld was not an easy and smooth, but
+                  effort was more strong. Alhamdulilah, form 15th October 2022
+                  we start our journey with a few dreamer person. Since the
+                  organization start to now we are trying to provide a best
+                  earning way. We are always flexible about client. We never
+                  promise to porvide automatic income because we belive in hard
+                  work.
+                </p>
+                {/* <p>
+                                Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, we clear consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor out incididunt ut labore et dolore magna aliqua. Amet facilisis magna etiam tempor orci.
+                            </p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+};
+
+export default Story;

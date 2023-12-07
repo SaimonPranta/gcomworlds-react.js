@@ -1,0 +1,9 @@
+.active-edit-task-model {
+    visibility: visible;
+}
+
+.active-edit-task-model .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}

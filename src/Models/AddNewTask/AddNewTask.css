@@ -1,0 +1,9 @@
+.active-add-task-model {
+    visibility: visible;
+}
+
+.active-add-task-model .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}

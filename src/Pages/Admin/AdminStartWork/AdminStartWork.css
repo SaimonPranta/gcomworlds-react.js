@@ -1,0 +1,93 @@
+.add-new-task, .clear-all-task {
+    border: none;
+    outline: none;
+    margin-right: 40%;
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: #fff;
+    align-items: center;
+}
+
+.clear-all-task {
+    border: none;
+    outline: none;
+    margin-right: 40%;
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: #fff;
+    align-items: center;
+}
+
+.add-new-task:active, .clear-all-task:active {
+    scale: 1.1;
+}
+
+.add-new-task:focus, .clear-all-task:focus {
+    background-color: rgb(114, 35, 188);
+}
+
+.task-container .inner-container .option {
+    background-color: rgb(170, 9, 9);
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-container .inner-container .option svg {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.task-container .inner-container .option svg:hover {
+    color: #ffffff77;
+}
+
+.not-task {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.not-task p {
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 1000;
+    opacity: .8;
+}
+
+@media only screen and (min-width:200px) and (max-width:1100px) {
+    .task-container .inner-container .option svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .add-new-task, .clear-all-task {
+        margin-right: 50px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    .task-container .inner-container .option svg {
+        height: 23px;
+        width: 23px;
+    }
+
+    .task-container .inner-container .option {
+        background-color: rgb(170, 9, 9);
+        height: 35px;
+        width: 90px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,81 @@
+.laicence {
+    position: relative;
+}
+
+.sub-laicence {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1d2a4b;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.laicence h5 {
+    position: absolute;
+    top: -20px;
+    font-size: 2rem;
+    font-weight: 700;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.laicence div {
+    padding: 5px;
+
+}
+
+.laicence h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.laicence img {
+    height: 500px;
+    width: 100%;
+}
+
+.laicence svg {
+    color: lightblue;
+    height: 28px;
+    width: 28px;
+}
+
+@media only screen and (min-width:200px) and (max-width:1200px) {
+    .laicence h5 {
+        top: -15px;
+    }
+
+    .laicence img {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:7200px) {
+    .laicence img {
+        height: 200px;
+    }
+
+    .laicence svg {
+        color: lightblue;
+        height: 23px;
+        width: 23px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:6200px) {
+    .laicence img {
+        height: 200px;
+    }
+
+    .sub-laicence {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .laicence h5 {
+        top: -10px;
+        font-size: 1.7rem;
+    }
+}

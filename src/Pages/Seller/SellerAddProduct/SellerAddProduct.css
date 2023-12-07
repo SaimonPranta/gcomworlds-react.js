@@ -1,0 +1,209 @@
+.add-product-container form {
+    width: 90% !important;
+}
+
+.add-product-container form div {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-product-container form div .seal-type-checkbox-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-product-container form div .seal-type-checkbox-container div p {
+    padding: 0px;
+}
+
+.add-product-container form .set-color-container div {
+    margin: 0;
+    gap: 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #236BAD;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.add-product-container form .set-color-container div input {
+    height: 31px;
+    border: none;
+    outline: none;
+}
+
+.add-product-container form .set-color-container button {
+    background-color: #f3f0f0;
+    border: 1px solid #e6e3e3;
+    color: #212529;
+    border: none;
+    outline: none;
+    width: 190px;
+    border-radius: 3px;
+}
+
+.add-product-container form .colors-container {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.add-product-container form .colors-container div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #236BAD;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.add-product-container form .colors-container p {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-product-container form .colors-container div:hover p::after {
+    position: absolute;
+    content: "x";
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3d3a3a13;
+}
+
+.add-product-container form div input {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #236BAD;
+    padding: 3px 10px;
+    font-weight: 200 !important;
+}
+
+.add-product-container form div input[type=file] {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #236BAD;
+    padding: 3px 10px;
+}
+
+.add-product-container form div select {
+    width: 190px;
+    border-radius: 3px;
+}
+
+.add-product-container form .product-details {
+    display: block;
+}
+
+.add-product-container form .product-details .product-details-inner {
+    display: block;
+}
+
+.add-product-container form .product-details .product-details-inner .product-wrapper {
+    background-color: #fff !important;
+    margin: 10px 0px !important;
+    border-radius: 5px;
+    padding: 15px !important;
+    box-shadow: 1px 1px 3px #0000003b;
+}
+
+.add-product-container form .product-details .product-details-inner .product-wrapper {
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+}
+
+.add-product-container form .product-details .product-details-inner .product-wrapper .cross-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 4px;
+    top: -1px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-product-container form .product-details .product-details-inner .product-wrapper .cross-icon svg {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+}
+
+.add-product-container form .img-container {
+    background-color: rgba(255, 255, 0, 0.212);
+}
+
+.add-product-container form .img-container img {
+    height: 300px;
+    width: 100%;
+}
+
+.add-img-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.add-img-btn button {
+    padding: 1px;
+    width: 40px;
+    border: 1px solid #9AC9E3;
+
+}
+
+.add-img-btn button:hover {
+    padding: 1px;
+    width: 40px;
+    border: 1px solid #9AC9E3;
+    background-color: #e4e0e0;
+}
+
+.add-img-btn button svg {
+    height: 20px;
+    width: 20px;
+}
+
+@media only screen and (min-width:200px) and (max-width:1100px) {
+    .add-product-container form .product-details .product-details-inner {
+        margin: 2px !important;
+    }
+
+    .add-product-container form .product-details .product-details-inner .product-wrapper {
+        flex-direction: column;
+        gap: 5px !important;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:600px) {
+    .add-product-container form .product-details .product-details-inner .product-wrapper div {
+        padding: 0px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+}

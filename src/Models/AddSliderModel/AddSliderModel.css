@@ -1,0 +1,23 @@
+.add-slider-model .inner-container {
+    height: 420px;
+}
+
+.common-model-style img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.active-add-slider-model {
+    visibility: visible;
+}
+
+.active-add-slider-model .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}
+
+.active-add-slider-model .inner-container {
+    height: 440px;
+}

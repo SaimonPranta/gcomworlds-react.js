@@ -1,0 +1,130 @@
+.flash-sale {
+    padding: 10px 5px;
+    background-color: var(--them-color);
+    border-radius: 5px 5px 50px 5px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid var(--them-color);
+}
+/* .flash-sale {
+    padding: 10px 5px;
+    background-color: transparent;
+    border-radius: 5px 5px 50px 5px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid var(--them-color);
+} */
+
+
+.flash-sale a {
+    text-decoration: none;
+}
+
+.flash-sale:hover {
+    border: 2px solid #bfbcbc3d;
+    background-color: transparent;
+
+}
+
+.flash-sale img {
+    height: 150px;
+    width: 100%;
+}
+
+.flash-sale h6 {
+    height: 40px;
+    width: 100%;
+    color: #000000;
+    font-weight: 800;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.flash-sale p {
+    margin: 0;
+    padding: 0;
+}
+
+.flash-sale p {
+    margin: 0;
+    padding: 0;
+}
+
+.flash-sale .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #DBA622;
+    display: flex;
+    align-items: center;
+}
+
+.flash-sale .price svg {
+    font-size: 1.5rem;
+    color: #DBA622;
+}
+
+.flash-sale .point {
+    color: #DBA622;
+    font-size: 1.1rem;
+}
+
+
+
+.flash-sale .old-price {
+    font-size: 1rem;
+    color: #ca9a20;
+    display: flex;
+    align-items: center;
+}
+
+.flash-sale .old-price p {
+    text-decoration: line-through;
+    color: #ca9a20;
+}
+
+.flash-sale .old-price strong {
+    margin-left: 10px;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.flash-sale .old-price svg {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #DBA622;
+}
+
+.flash-sale svg {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #faca51;
+}
+
+.buy-now-btn {
+    background-color: #FF7812;
+    border: 1px solid #FF7812;
+}
+
+.buy-now-btn:hover {
+    background-color: #cc5f0c;
+    border: 1px solid #d1630e;
+}
+
+@media only screen and (min-width:200px) and (max-width: 900px) {
+    .flash-sale img {
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 700px) {
+    .flash-sale img {
+        height: 80px;
+        width: 100%;
+    }
+
+    .flash-sale h6 {
+        font-size: 1.1rem;
+        word-break: break-all;
+        overflow: visible;
+    }
+}

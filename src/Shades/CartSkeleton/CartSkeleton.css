@@ -1,0 +1,143 @@
+.cart-skelton {
+    background-color: #e6e4e491;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: blip 3s infinite !important;
+    transition: .5s ease-in-out;
+}
+
+.cart-skelton .img {
+    height: 150px;
+    background-color: #ded7d73e;
+}
+
+.cart-skelton .info-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-skelton .info-container p {
+    border-radius: 5px;
+}
+
+.cart-skelton .info-container p:nth-child(1) {
+    height: 20px;
+    width: 90%;
+    background-color: #ffffffad;
+
+}
+
+.cart-skelton .info-container p:nth-child(2) {
+    height: 15px;
+    width: 50%;
+    background-color: #ffffffad;
+}
+
+.cart-skelton .info-container p:nth-child(3) {
+    height: 15px;
+    width: 40%;
+    background-color: #ffffffad;
+}
+
+.cart-skelton .info-container p:nth-child(4) {
+    height: 15px;
+    width: 50%;
+    background-color: #ffffffad;
+}
+
+.cart-skelton .info-container p:nth-child(5) {
+    height: 15px;
+    width: 45%;
+    background-color: #ffffffad;
+}
+
+.cart-skelton .btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 10px 10px 20px 10px;
+
+}
+
+.cart-skelton .btn-container p {
+    height: 30px;
+    width: 45%;
+    background-color: #ffffffad;
+    border-radius: 5px;
+}
+
+
+
+@keyframes blip {
+    form {
+        background-color: #e6e4e491;
+    }
+
+    to {
+        background-color: #e6e4e446;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 750px) {
+
+    .cart-skelton .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 10px 10px 10px;
+
+    }
+
+
+    .cart-skelton .info-container {
+        gap: 6px;
+    }
+
+    .cart-skelton .btn-container p {
+        width: 90%;
+        height: 20px;
+
+    }
+
+    .product-cart .product-btn a {
+        width: 90%;
+    }
+
+    .cart-skelton .info-container p:nth-child(1) {
+        height: 14px !important;
+        width: 95%;
+    }
+
+    .cart-skelton .info-container p:nth-child(2) {
+        height: 10px;
+        width: 60%;
+    }
+
+    .cart-skelton .info-container p:nth-child(3) {
+        height: 10px;
+        width: 50%;
+    }
+
+    .cart-skelton .info-container p:nth-child(4) {
+        height: 10px;
+        width: 60%;
+    }
+
+    .cart-skelton .info-container p:nth-child(5) {
+        height: 10px;
+        width: 55%;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width: 700px) {
+    .cart-skelton .img {
+        height: 100px;
+    }
+
+
+}

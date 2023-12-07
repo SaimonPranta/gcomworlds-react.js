@@ -1,0 +1,60 @@
+.points-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+}
+
+.points-card div {
+    /* box-shadow: #dba622 10px 10px; */
+    box-shadow: yellow 10px 10px;
+    padding: 25px 50px;
+    border-radius: 10px;
+    margin: 25px;
+    background-color: #BD4CEC;
+}
+
+.points-card div svg {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.points-card div h4 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.points-card div p {
+    font-size: 1.05rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.daily-points div {
+    background-color: #EB6C40;
+}
+
+.regular-points div {
+    background-color: #5C4EE5;
+}
+
+.access-points div {
+    background-color: #64BC36;
+}
+
+@media only screen and (min-width:200px) and (max-width: 800px) {
+    .points-card div {
+        /* box-shadow: #dba622 10px 10px; */
+        box-shadow: yellow 10px 10px;
+        padding: 25px 50px;
+        border-radius: 10px;
+        margin: 25px 25px 0 0;
+        background-color: #BD4CEC;
+    }
+}

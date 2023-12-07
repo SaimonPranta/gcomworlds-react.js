@@ -1,0 +1,32 @@
+.loading {
+    background-color: var(--them-color) !important;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999999999999 !important;
+}
+
+.loading img {
+    width: 700px;
+    height: auto;
+}
+
+@media only screen and (min-width:200px) and (max-width:1350px) {
+    .loading img {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    .loading img {
+        width: 300px;
+        height: auto;
+    }
+
+}

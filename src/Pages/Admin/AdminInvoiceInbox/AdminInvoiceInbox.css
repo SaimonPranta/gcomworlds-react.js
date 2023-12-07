@@ -1,0 +1,29 @@
+.admin-sender-name {
+    background-color: green;
+    padding: 4px 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.admin-user-info button {
+    background-color: #FFA733;
+    color: blue;
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+
+}
+
+.admin-send-msg-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-send-msg-box p {
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+

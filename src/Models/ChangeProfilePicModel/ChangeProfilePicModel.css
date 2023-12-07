@@ -1,0 +1,20 @@
+.change-profile-pic .inner-container {
+    height: 420px;
+    
+}
+
+.common-model-style img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.active-change-profile-pic {
+    visibility: visible;
+}
+
+.active-change-profile-pic .inner-container {
+    transform: translate(-50%, 10%) scale(1);
+    visibility: visible;
+
+}

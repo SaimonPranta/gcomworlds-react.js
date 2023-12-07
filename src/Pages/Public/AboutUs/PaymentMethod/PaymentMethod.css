@@ -1,0 +1,86 @@
+.payment h3::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 150px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #dba622;
+}
+
+.payment {
+    position: relative;
+}
+
+.payment .item {
+    margin: 0 10px;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #232F4B;
+    transition: .9s;
+    cursor: pointer;
+}
+
+.payment .item:hover {
+    background-color: #dba622;
+}
+
+.payment .item img {
+    height: 100%;
+    width: 100%;
+}
+
+.payment .swiper-button-next:after, .payment .swiper-button-prev:after {
+    background-color: #dba622;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px !important;
+    width: 35px !important;
+    padding: 10px !important;
+    border-radius: 50%;
+    color: #fff;
+
+}
+
+.payment .swiper-button-next:after {
+    transform: translateX(8px) !important;
+}
+
+.payment .swiper-button-prev:after {
+    transform: translateX(-7px) !important;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:1100px) {
+    .payment .item {
+        padding: 7px 15px;
+        height: 100px;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:800px) {
+    .payment .item {
+        padding: 7px 15px;
+        height: 80px;
+    }
+
+    .payment .swiper-button-next:after, .payment .swiper-button-prev:after {
+        font-size: 1rem;
+        height: 25px !important;
+        width: 25px !important;
+
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:550px) {
+    .payment .item {
+        padding: 5px 5px;
+        height: 50px;
+    }
+
+}

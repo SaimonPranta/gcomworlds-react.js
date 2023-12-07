@@ -1,0 +1,232 @@
+.purchase-request {}
+
+.purchase-request .purchase-container {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.purchase-request .purchase-container .inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(137, 43, 226, 0.26);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+}
+
+.purchase-request .purchase-container .option {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.purchase-request .purchase-container .option .delete {
+    background-color: #2f040466;
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+    border-radius: 50%;
+    color: darkorange;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.purchase-request .purchase-container .option button {
+    border: none;
+    outline: none;
+    padding: 3px 10px;
+    background-color: #FB641B;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.purchase-request .purchase-container .option button svg {
+    height: 25px;
+    width: 25px;
+    transition: .5s;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer {
+    position: absolute;
+    width: calc(100vw - 600px);
+    top: 40px;
+    left: -700px;
+    /* display: none; */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* grid-column-gap: 10px; */
+    z-index: 99 !important;
+    height: 10px !important;
+    visibility: hidden;
+    background-color: #2E1C58 !important;
+    overflow-y: auto;
+    transition: .5s linear;
+}
+
+
+.purchase-request .purchase-container .option button:active {
+    scale: 1;
+    opacity: 1;
+    z-index: 999;
+    background-color: #bd480d;
+
+}
+
+.purchase-request .purchase-container .option button:focus {
+    background-color: #bd480d;
+}
+
+.purchase-request .purchase-container .option button:focus svg {
+    transform: rotate(90deg);
+}
+
+.purchase-request .purchase-container .option button:focus .main-product-contianer {
+    visibility: visible;
+    height: 300px !important;
+    z-index: 99 !important;
+    transition: .5s linear;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container {
+    background-color: rgba(137, 43, 226, 0.26);
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container div h6 {
+    color: blueviolet;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container div .price {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container div p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container div .total {
+    font-weight: 800;
+    border-top: 1px solid #fff;
+}
+
+.purchase-request .purchase-container .option button .main-product-contianer .inner-container img {
+    height: 100%;
+    max-height: 120px;
+    width: 100px;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:1300px) {
+
+    .purchase-request .purchase-container .option button .main-product-contianer {
+        width: calc(100vw - 400px);
+        left: -750px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .purchase-request .purchase-container .option button .main-product-contianer .inner-container {
+        background-color: rgba(137, 43, 226, 0.26);
+        display: grid;
+        grid-template-columns: .2fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .purchase-request .purchase-container .option button .main-product-contianer {
+        width: calc(100vw - 330px);
+        /* left: -550px; */
+        left: -450%;
+
+    }
+
+    .purchase-request .purchase-container .option button .main-product-contianer .inner-container {
+        background-color: rgba(137, 43, 226, 0.26);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-request .purchase-container .option button .main-product-contianer .inner-container img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:800px) {
+    .purchase-request .purchase-container .inner-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .purchase-request .purchase-container .option button .main-product-contianer {
+        width: calc(100vw - 100px) !important;
+        /* left: -550px; */
+        left: auto;
+        right: 0px;
+
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    .purchase-request .purchase-container .option button .main-product-contianer {
+        width: calc(100vw - 100px) !important;
+        /* left: -550px; */
+        left: auto;
+        right: 0px;
+
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:600px) {
+    .purchase-request .purchase-container .option button .main-product-contianer {
+        width: calc(100vw - 20px) !important;
+
+    }
+
+    .purchase-request .purchase-container .option .delete {
+        background-color: #2f040466;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+    }
+
+    .purchase-request .purchase-container .option {
+        padding: 10px 5px;
+        right: 0px;
+
+    }
+
+    .purchase-request .purchase-container .option button {
+        padding: 1px 5px;
+    }
+
+    .purchase-request .purchase-container .option button svg {
+        height: 15px;
+        width: 15px;
+    }
+}

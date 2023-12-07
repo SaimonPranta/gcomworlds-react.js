@@ -1,0 +1,35 @@
+.search-container-section {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+ 
+
+.search-container-section input {
+  width: 100%;
+  margin: 0px 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.search-container-section input::placeholder {
+  color: #b6b4b4;
+}
+
+.search-container-section svg {
+  font-size: 30px;
+}
+
+.search-container-section button {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 4px 20px;
+  background-color: #1c7cbe;
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+
+
+ .active-edit-profile-model {
+     visibility: visible;
+ }
+
+ .active-edit-profile-model .inner-container {
+     transform: translate(-50%, 10%) scale(1);
+     visibility: visible;
+
+ }

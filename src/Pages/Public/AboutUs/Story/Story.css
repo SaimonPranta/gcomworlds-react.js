@@ -1,0 +1,40 @@
+.sub-story{
+    background-color: #232f4ba0;
+    color: rgb(190, 146, 146);
+}
+.sub-story h4{
+    font-size: 2.2rem;
+    color: #fff;
+}
+.sub-story p{
+    margin-top: 10px;
+    padding-left: 0;
+    color: #fff;
+
+}
+.sub-story h6{
+    color: #DBA622;
+}
+.story img{
+    width: 100%;
+    /* height: 300px; */
+    height: 250px;
+}
+.story-text{
+    position: relative;
+}
+.story-text::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 3px;
+    top:0px;
+    left: -10px;
+    background-color: #DBA622;
+}
+@media only screen and (min-width:200px) and (max-width:576px) {
+    .story img{
+        width: 100%;
+        height: 200px;
+    }
+}

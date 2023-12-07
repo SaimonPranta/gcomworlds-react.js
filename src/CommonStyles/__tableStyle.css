@@ -1,0 +1,299 @@
+.collps-disable {
+    display: none !important;
+}
+
+.common-table-style {
+    margin: 50px 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.common-table-style h4 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.common-table-style .table-porfile-pic {
+    width: 200px !important;
+    display: flex;
+    align-items: center !important;
+
+}
+
+.common-table-style .table-porfile-pic p {
+    width: 180px;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.common-table-style .table-porfile-pic img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.table-collaps-icon {
+    margin-left: 10px;
+    color: #dba622;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.collaps-icon {
+    transform: rotate(180deg);
+
+}
+
+.common-table-container {
+    height: 100%;
+    width: 80%;
+}
+
+.active-common-table-container {
+    position: relative;
+}
+
+.common-table-style table {
+    width: 100%;
+    max-width: calc(100vw -500px);
+    height: 100%;
+    padding: 5px;
+}
+
+.common-table-style table thead tr {
+    background-color: #23304f;
+    color: #fff;
+}
+
+.common-table-style table thead tr th {
+    height: 30px;
+    text-overflow: clip;
+    padding: 10px 10px 10px 20px;
+}
+
+.common-table-style table tbody tr {
+    background-color: #202020;
+    border-bottom: 1px solid rgba(135, 119, 119, 0.684);
+    cursor: pointer;
+    color: rgb(248, 245, 245);
+}
+
+.common-table-style table tbody tr td {
+    height: 30px;
+    padding: 10px 10px 10px 20px;
+}
+
+.common-table-style table tbody tr .table-date {
+    min-width: 180px;
+}
+
+.common-table-style table tbody tr .table-name {
+    min-width: 130px;
+}
+
+.common-table-style table tbody tr td:nth-child(even) {
+    background-color: #3b37376e;
+}
+
+.common-table-style table tbody tr:hover {
+    background-color: #3b37378f;
+}
+
+.active-common-table-container table .admin_porfile_control_continer {
+    position: relative;
+    overflow: hidden !important;
+}
+
+.active-common-table-container table .delete_icon img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.active-common-table-container table .delete_icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    cursor: default;
+}
+
+.active-common-table-container table .three_dots {
+    position: relative;
+}
+
+.active-common-table-container table .three_dots svg {
+    color: rgb(223, 197, 197);
+}
+
+.active-common-table-container table .three_dots svg:hover {
+    color: rgb(223, 197, 197);
+}
+
+
+.common-table-container div {
+    width: 100%;
+    max-height: 500px;
+    /*this is for controling user Table height.*/
+}
+
+.active-common-table-container div {
+    overflow: auto;
+}
+
+.no-history {
+    height: 100px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-history p {
+    background-color: yellow !;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: .7;
+}
+
+.common-table-container div::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.common-table-container div {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.569) #1E273F;
+}
+
+.common-table-container div::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #1E273F;
+}
+
+.common-table-container div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.569);
+
+}
+
+.common-table-container div::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.726);
+
+}
+
+.common-table-container div::-webkit-scrollbar-thumb:active {
+    background: #e3e5ea;
+}
+
+.common-table-container .scroll-text {
+    display: none;
+}
+
+
+.common-table-container .view-profile a {
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.active-common-table-container .scroll-text {
+    position: absolute;
+    overflow: visible;
+    top: 42px;
+    right: -95px;
+    height: 36px;
+    width: 120px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--default-blue);
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1 !important;
+}
+
+.active-common-table-container .scroll-text p {
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--default-blue);
+}
+
+.active-common-table-container .scroll-text::after {
+    position: absolute;
+    content: "";
+    bottom: -8.5px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    height: 15px;
+    width: 15px;
+    background-color: var(--them-color);
+    background-color: #FFFFFF;
+    border: 2px solid var(--default-blue);
+    border-left: 0px solid transparent;
+    border-top: 0px solid transparent;
+    /* z-index: 2 !important; */
+}
+
+.common-table-container .table-no-data {
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.common-table-container .table-no-data p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    opacity: .7;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1500px) {
+    .common-table-container {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 1200px) {
+    .common-table-container {
+        width: calc(100% - 67px) !important;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 650px) {
+    .common-table-container {
+        width: calc(100% - 43px) !important;
+    }
+
+    .active-common-table-container .scroll-text {
+        position: absolute;
+        overflow: visible;
+        top: 36px;
+        right: -80px;
+        height: 30px;
+        width: 100px;
+        padding: 0px;
+        margin: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid yellow;
+        transform: rotate(90deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1 !important;
+    }
+}

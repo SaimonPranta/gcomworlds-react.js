@@ -1,0 +1,124 @@
+.active-page-body {
+    .footer {
+        width: calc(100vw - 50px);
+        transform: translateX(0px);
+    }
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    width: var(--page-body-width);
+    transform: var(--page-body-translate);
+    background-color: #FFFFFF;
+    margin: 0px 20px;
+    transition: .5s ease-in-out;
+}
+
+
+.footer h3 {
+    font-size: 1.7rem;
+    position: relative;
+    margin-bottom: 10px;
+    color: #dba622;
+}
+
+.footer h3::after {
+    position: absolute;
+    content: "";
+    bottom: 1px;
+    left: 0px;
+    height: 1px;
+    width: 80px;
+    background-color: #dba622;
+}
+
+.footer .contact span {
+    padding: 2px 0;
+    cursor: pointer;
+    color: var(--font-color);
+
+}
+
+.footer .contact a {
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+
+}
+
+.footer .contact a:hover {
+    color: #dba622;
+}
+
+.footer .contact span:hover {
+    color: #dba622;
+}
+
+.footer svg {
+    color: #dba622;
+    height: 24px;
+    width: 24px;
+}
+
+.socila {
+    display: flex;
+}
+
+.socila span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 40px !important;
+    width: 40px !important;
+    margin: 2px;
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.socila span:first-child {
+    margin-left: 0px !important;
+}
+
+.socila span:hover {
+    background-color: #fff;
+}
+
+.socila span:hover svg {
+    color: #dba622 !important;
+}
+
+.socila svg {
+    height: 25px;
+    width: 25px;
+    /* z-index: 99; */
+    transition: .2s;
+    /* color: #fff; */
+    color: var(--font-color);
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    border-top: 1px solid rgba(119, 93, 93, 0.571);
+}
+
+.footer .copyright span {
+    font-size: 1.2rem;
+    color: #dba622
+}
+
+@media only screen and (min-width: 200px) and (max-width: 950px) {
+    .active-page-body {
+        .footer {
+            width: 100vw ;
+            transform: translateX(0px);
+        }
+
+    }
+    .footer {
+        width: calc(100vw - 50px);
+        transform: translateX(0px);
+    }
+}

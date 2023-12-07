@@ -1,0 +1,101 @@
+.common-model-style {
+    visibility: hidden;
+}
+
+.common-model-style .inner-container {
+    background-color: #fff;
+    position: fixed;
+    height: 350px;
+    max-width: 700px;
+    width: 80%;
+    top: 20%;
+    left: 50%;
+    background-color: #fff;
+    z-index: 99;
+    color: #000;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 10px 20px 1px #00000055;
+    visibility: hidden;
+    transition: .5s;
+    transform: translate(-50%, -80%) scale(.2);
+
+}
+
+.common-model-style .title-container {
+    border-bottom: 1px solid #0000005f;
+    position: relative;
+}
+
+.common-model-style .title-container svg {
+    position: absolute;
+    background-color: #0000003a;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 9px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.common-model-style form {
+    padding: 20px;
+}
+
+.common-model-style form .error {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+
+}
+
+.common-model-style form div {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin-top: 10px;
+}
+
+.common-model-style form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #e6dadade;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.common-model-style form input[type=submit] {
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.common-model-style .model-blur-bg {
+    background-color: rgba(248, 248, 248, 0.4);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:1200px) {
+    .common-model-style .inner-container {
+        height: 280px;
+    }
+
+    .common-model-style form input[type=submit] {
+        width: 150px;
+    }
+}
